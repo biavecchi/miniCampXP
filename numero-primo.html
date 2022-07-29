@@ -1,0 +1,16 @@
+<html>
+  <script>
+    // Criar funcao para mostrar numeros primos
+    function verificaNumeroPrimo(numero) {
+      if (numero == 0 || numero == 1) {
+        return 'Não é um número primo'
+      }
+      for (let div = 2; div <= Math.sqrt(numero); div++) {
+        if (numero % div == 0) {
+          return 'Não é um número primo'
+        }
+      }
+      return 'É um número primo'
+    }
+  </script>
+</html>
